@@ -698,6 +698,11 @@
 
       
     }
+    .gift-card-hidden {
+  display: none;
+  margin-top: 30px;
+  animation: fadeUp 0.8s ease;
+}
   </style>
 </head>
 <body>
@@ -1051,6 +1056,19 @@
 
            });
     });
+
+    function showJewelryCard() {
+  const card = document.getElementById("jewelryCard");
+
+  card.style.display = "block";
+
+  launchConfetti();
+
+  card.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
+}
   </script>
 </body>
 </html>
